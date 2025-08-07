@@ -1,0 +1,8 @@
+package edu.bbte.idde.meim2276.backend.exceptions;
+
+public class DatabaseException extends Exception {
+    public DatabaseException(String message, Exception e) {
+        super(message, e);
+    }
+
+}

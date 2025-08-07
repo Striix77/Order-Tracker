@@ -1,0 +1,8 @@
+apply from: "${rootDir}/lint.gradle"
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.1'
+    runtimeOnly 'mysql:mysql-connector-java:8.0.33'
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation project(':meim2276-shared')
+}

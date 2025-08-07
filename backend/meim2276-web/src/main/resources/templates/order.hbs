@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+    <link rel="stylesheet" type="text/css" href="orderPage.css">
+</head>
+<body>
+<div class="nav-bar-container">
+    <form method="post" action="logout">
+        <button type="submit">Log Out</button>
+    </form>
+</div>
+<div class="purchaseOrder-container">
+    {{#if purchaseOrder}}
+        <h2>Requested Order:</h2>
+        <div class="purchaseOrder-list-container">
+            <ul>
+                <li>
+                    <p>Order ID: {{purchaseOrder.id}}</p>
+                    <p>Order Placement Date: {{purchaseOrder.dateOfOrder}}</p>
+                    <p>Order Delivery Date: {{purchaseOrder.dateOfDelivery}}</p>
+                    <p>Order Status: {{purchaseOrder.status}}</p>
+                    <p>Order Total: {{purchaseOrder.total}}</p>
+                </li>
+            </ul>
+        </div>
+    {{else if orders}}
+        <h2>Requested Orders:</h2>
+        <div class="purchaseOrder-list-container">
+            <ul>
+                {{#each orders}}
+                    <li>
+                        <p>Order ID: {{this.id}}</p>
+                        <p>Order Placement Date: {{this.dateOfOrder}}</p>
+                        <p>Order Delivery Date: {{this.dateOfDelivery}}</p>
+                        <p>Order Status: {{this.status}}</p>
+                        <p>Order Total: {{this.total}}</p>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    {{else}}
+        <h2>No Orders Found</h2>
+    {{/if}}
+</div>
+</body>
+</html>

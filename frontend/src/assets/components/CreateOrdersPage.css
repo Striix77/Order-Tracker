@@ -1,0 +1,69 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.submit-button {
+  border-radius: 7px;
+  background: linear-gradient(145deg, #142732, #11202a);
+  box-shadow:
+    5px 5px 10px #0e1a22,
+    -5px -5px 10px #182e3c;
+}
+
+form {
+  width: 50%;
+}
+
+.form-element {
+  border-radius: 7px;
+  background: linear-gradient(145deg, #0f202c, #0d1b25);
+  box-shadow:
+    7px 7px 14px #0b1820,
+    -7px -7px 14px #112432;
+
+  color: rgba(237, 237, 237, 0.87);
+  width: 100%;
+}
+
+.form-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-control {
+  margin: none;
+}
+
+/* Targeting the input element of TextField */
+.MuiInputBase-input {
+  color: rgba(237, 237, 237, 0.87) !important;
+}
+
+/* Targeting the label element of TextField */
+.MuiInputLabel-root {
+  color: rgba(0, 168, 252, 0.87) !important;
+}
+
+/* Targeting the border of Select component */
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+/* Targeting the hover and focused states of Select component */
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.MuiSelect-icon {
+  color: rgba(0, 168, 252, 0.87) !important;
+}

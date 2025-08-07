@@ -1,0 +1,66 @@
+body {
+    background-color: #0e191f;
+    color: #e0e0e0;
+    font-family: 'Fira Code', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vh;
+
+    input {
+        width: 20vw;
+        height: 4vh;
+        border: none;
+        padding: 5px 10px;
+        color: #e0e0e0;
+        font-size: 1.1rem;
+        margin-bottom: 2vh;
+        border-radius: 4px;
+        background: #0e191f;
+        box-shadow: inset 10px 10px 17px #0c161b,
+        inset -10px -10px 17px #101c23;
+    }
+
+    input:focus {
+        border: none;
+        outline: none;
+    }
+
+    button {
+        width: 15vw;
+        border: none;
+        padding: 5px;
+        font-size: 1.5rem;
+        margin-bottom: 1vh;
+        margin-top: 2vh;
+        cursor: pointer;
+        color: #e0e0e0;
+        border-radius: 4px;
+        background: linear-gradient(145deg, #0f1b21, #0d171c);
+        box-shadow: 8px 8px 16px #0b1318,
+        -8px -8px 16px #111f26;
+    }
+}
+
+.error-container {
+    color: #da3e00;
+}

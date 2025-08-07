@@ -1,0 +1,8 @@
+{
+  "daoType": "InMem",
+  "jdbcUrl": "",
+  "jdbcDriver": "",
+  "jdbcUsername": "",
+  "jdbcPassword": "",
+  "connectionPoolSize": 10
+}

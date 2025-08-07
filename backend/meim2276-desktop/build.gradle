@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'edu.bbte.idde.meim2276.Main'
+}
+
+apply from: "${rootDir}/lint.gradle"
+
+
+dependencies {
+    runtimeOnly 'mysql:mysql-connector-java:8.0.33'
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation project(':meim2276-backend')
+    implementation project(':meim2276-shared')
+    implementation 'org.openjfx:javafx-controls:17'
+}

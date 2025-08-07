@@ -1,0 +1,15 @@
+plugins {
+    id 'war'
+}
+
+apply from: "${rootDir}/lint.gradle"
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.2'
+    compileOnly group: 'jakarta.servlet', name: 'jakarta.servlet-api', version: '6.1.0'
+    implementation 'com.github.jknack:handlebars:4.3.1'
+    implementation project(':meim2276-backend')
+    implementation project(':meim2276-shared')
+}

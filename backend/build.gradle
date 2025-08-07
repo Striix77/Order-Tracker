@@ -1,0 +1,27 @@
+plugins {
+    id 'application'
+}
+
+
+mainClassName = 'edu.bbte.idde.meim2276.Main'
+allprojects {
+    group = 'edu.bbte.idde.meim2276'
+    version = '1.0-SNAPSHOT'
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply from: "${rootDir}/lint.gradle"
+subprojects {
+    apply plugin: 'java'
+
+
+    dependencies {
+        runtimeOnly 'org.slf4j:slf4j-api:1.7.32'
+        runtimeOnly 'org.slf4j:slf4j-simple:1.7.32'
+    }
+
+}
+
+
